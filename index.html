@@ -575,8 +575,8 @@
         /* Scroll Down Indicator */
         .scroll-down {
             position: absolute;
-            bottom: 30px;
-            left: 50%;
+            bottom: 50px;
+            left: 20%;
             transform: translateX(-50%);
             display: flex;
             flex-direction: column;
@@ -722,6 +722,9 @@
                 <img src="/assets/profile.jpeg" alt="Jafar Alsoubeni" class="profile-pic">
             </div>
         </div>
+        <a href="#about" class="scroll-down" data-i18n="scroll">
+    <i class="fas fa-chevron-down"></i>
+</a>
         <div class="terminal-text">
             <h1 class="name" data-i18n="name">جعفر السبيني</h1>
             <h2 class="title" data-i18n="title">مطور برمجيات </h2>
@@ -743,6 +746,7 @@
             </a>
         </div>
 
+        
     </section>
 
     <!-- About Section -->
@@ -1253,6 +1257,13 @@
             opacity: 0,
             stagger: 0.2
         });
+        gsap.from('.scroll-down', {
+    duration: 0.8,
+    y: 20,
+    opacity: 0,
+    delay: 1.5,
+    ease: 'power2.out'
+});
     }
 </script>
 </body>
