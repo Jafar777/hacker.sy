@@ -336,38 +336,18 @@
         }
 
         .contact-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--spacing-lg);
-        }
+            display: flex;
+          
 
+        }
+        .contact-details p{
+            margin-right: 25px;
+        }
         .contact-info {
             background: var(--primary-dark);
             color: var(--primary-light);
-            padding: var(--spacing-lg);
             border-radius: var(--border-radius);
-        }
-
-        .contact-info h3 {
-            color: var(--primary-light);
-            margin-bottom: var(--spacing-md);
-        }
-
-        .contact-details {
-            margin-bottom: var(--spacing-md);
-        }
-
-        .contact-details p {
-            margin-bottom: var(--spacing-xs);
-            display: flex;
-            align-items: center;
-        }
-
-        .contact-form {
-            background: var(--primary-light);
-            padding: var(--spacing-lg);
-            border-radius: var(--border-radius);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+           
         }
 
         .form-group {
@@ -417,6 +397,8 @@
             display: flex;
             gap: var(--spacing-md);
             margin: var(--spacing-md) 0;
+            padding: 50px;
+            margin-right: 10px;
         }
 
         .social-links a {
@@ -468,6 +450,9 @@
             .hero-buttons {
                 justify-content: center;
             }
+            .social-links a {
+            font-size: 1rem;
+        }
         }
 
         @media (max-width: 768px) {
@@ -630,6 +615,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- الفوتر -->
     <!-- الفوتر -->
