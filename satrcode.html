@@ -333,10 +333,14 @@
         /* اتصل بنا */
         .contact {
             background: linear-gradient(to bottom, #fff, #f9f9f9);
+            
+            
         }
 
         .contact-wrapper {
-            display: flex;
+                        display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
           
 
         }
